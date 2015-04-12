@@ -34,13 +34,13 @@ public class TrafficSpeed {
     }
 
     public boolean isNetworkConnected() {
-        Log.i(TAG, "isNetworkConnected");
+        Log.d(TAG, "isNetworkConnected");
         boolean networkConnected = false;
         ConnectivityManager connectivityManager = (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
         if (networkInfo != null) {
             networkConnected = networkInfo.isConnected();
-            Log.i(TAG, "networkType = " + networkInfo.getTypeName().toUpperCase(Locale.ENGLISH));
+            Log.d(TAG, "networkType = " + networkInfo.getTypeName().toUpperCase(Locale.ENGLISH));
         }
         return networkConnected;
     }
