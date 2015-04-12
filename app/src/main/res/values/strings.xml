@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">Network Speed Indicator</string>
     <string name="waitingConnection">Waiting connection..</string>
+    <string name="download">Download</string>
+    <string name="upload">Upload</string>
 </resources>

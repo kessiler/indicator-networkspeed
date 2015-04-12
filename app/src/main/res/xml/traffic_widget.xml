@@ -3,5 +3,5 @@
     android:initialLayout="@layout/traffic_widget"
     android:minWidth="250dp"
     android:minHeight="40dp"
-    android:updatePeriodMillis="0">
+    android:updatePeriodMillis="1000">
 </appwidget-provider>

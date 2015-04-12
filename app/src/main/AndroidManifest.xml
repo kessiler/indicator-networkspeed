@@ -3,6 +3,9 @@
     package="br.com.indicator.networkspeed">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
 
     <application
         android:allowBackup="true"
@@ -10,13 +13,13 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
 
-        <receiver android:name=".TrafficReceiver">
+        <receiver android:name=".TrafficReceiver" android:exported="true">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".TrafficWidget">
+        <receiver android:name=".TrafficWidget" android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
